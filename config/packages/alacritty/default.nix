@@ -1,3 +1,3 @@
 {
-    home.file."/home/vylpes/.config/alacritty/alacritty.yml".source = ./alacritty.yml;
+    home.file."/home/vylpes/.config/alacritty/alacritty.toml".source = ./alacritty.toml;
 }
