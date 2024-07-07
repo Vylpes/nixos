@@ -22,7 +22,6 @@ in {
 
     packages = with pkgs; [
         alacritty
-        azuredatastudio
         cups
         curl
         discord
