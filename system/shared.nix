@@ -97,5 +97,7 @@
 
   virtualisation.docker.enable = true;
 
+  xdg.portal.enable = true;
+
   system.stateVersion = "24.05";
 }
