@@ -49,7 +49,6 @@ in {
         lightdm
         lua
         meslo-lgs-nf
-	neofetch
         neovim
         networkmanager
         nextcloud-client
