@@ -54,7 +54,6 @@ in {
         nitrogen
         nodejs
         nodePackages.npm
-        nvidia
         obsidian
         openssh
         openssl

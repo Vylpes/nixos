@@ -16,6 +16,7 @@
         setupCommands = ''
         '';
       };
+      videoDrivers = [ "nvidia" ];
     };
   };
 }
