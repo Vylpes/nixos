@@ -66,7 +66,6 @@ in {
         tldr
         unzip
         vim
-        vimPlugins.copilot-vim
         vimPlugins.CopilotChat-nvim
         vimPlugins.fzf-vim
         vimPlugins.harpoon
