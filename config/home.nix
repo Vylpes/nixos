@@ -66,13 +66,6 @@ in {
         tldr
         unzip
         vim
-        vimPlugins.coc-css
-        vimPlugins.coc-docker
-        vimPlugins.coc-html
-        vimPlugins.coc-jest
-        vimPlugins.coc-json
-        vimPlugins.coc-nvim
-        vimPlugins.coc-tsserver
         vimPlugins.copilot-vim
         vimPlugins.CopilotChat-nvim
         vimPlugins.fzf-vim
