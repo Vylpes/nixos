@@ -66,12 +66,15 @@
       "flatpak"
       "wheel"
     ];
+    shell = pkgs.zsh
   };
 
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
   };
+  
+  programs.zsh.enable = true;
 
   fonts = {
     packages = with pkgs; [

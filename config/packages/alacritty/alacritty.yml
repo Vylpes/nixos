@@ -53,7 +53,3 @@ key_bindings:
     - { key: PageDown, mods: Shift, action: ScrollPageDown }
     - { key: Home, mods: Shift, action: ScrollToTop }
     - { key: End, mods: Shift, action: ScrollToBottom }
-
-shell:
-  program: /bin/zsh
-
