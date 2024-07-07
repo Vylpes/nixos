@@ -25,7 +25,6 @@ in {
         cups
         curl
         discord
-        dotnet-aspnetcore_8
         dotnet-sdk_8
         dotnetPackages.Nuget
         dunst
