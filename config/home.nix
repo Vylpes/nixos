@@ -66,10 +66,6 @@ in {
         tldr
         unzip
         vim
-        vimPlugins.CopilotChat-nvim
-        vimPlugins.fzf-vim
-        vimPlugins.harpoon
-        vimPlugins.omnisharp-extended-lsp-nvim
         vimPlugins.vim-plug
         vscode
         wget
