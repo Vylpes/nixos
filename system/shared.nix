@@ -75,6 +75,7 @@
   };
   
   programs.zsh.enable = true;
+  programs.neovim.defaultEditor = true;
 
   fonts = {
     packages = with pkgs; [
@@ -96,15 +97,18 @@
 
   environment.systemPackages = with pkgs; [
     docker
+    pulseaudio
   ];
 
   virtualisation.docker.enable = true;
 
-    xdg.portal = {
-        enable = true;
-        config.common.default = "*";
-        extraPortals = [pkgs.xdg-desktop-portal-gtk];
-    };
+  xdg.portal = {
+      enable = true;
+      config.common.default = "*";
+      extraPortals = [pkgs.xdg-desktop-portal-gtk];
+  };
+
+  hardware.pulseaudio.enable = true;
 
   system.stateVersion = "24.05";
 }

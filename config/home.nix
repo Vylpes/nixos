@@ -63,7 +63,6 @@ in {
         pm2
         plexamp
         polybar
-        pulseaudio
         rofi
         rofi-emoji
         steam
