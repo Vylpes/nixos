@@ -1,7 +1,6 @@
 {
   imports = [
     ./alacritty
-    ./docker
     ./dunst
     ./git
     ./i3

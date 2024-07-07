@@ -92,8 +92,10 @@
   };
 
   environment.systemPackages = with pkgs; [
-    vim
+    docker
   ];
+
+  virtualisation.docker.enable = true;
 
   system.stateVersion = "24.05";
 }

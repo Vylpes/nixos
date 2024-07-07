@@ -26,8 +26,6 @@ in {
         cups
         curl
         discord
-        docker
-        docker-compose
         dotnet-aspnetcore_8
         dotnet-runtime_8
         dotnet-sdk_8
