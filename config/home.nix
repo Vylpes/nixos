@@ -20,7 +20,9 @@ in {
     homeDirectory = "/home/${username}";
     stateVersion = "24.05";
 
-    file.`/home/${username}/.scripts/audio/get-sink-name.sh`.source = ./home/scripts/audio/get-sink-name.sh;
+    file = {
+        "/home/${username}/.scripts/audio/get-sink-name.sh".source = ./home/scripts/audio/get-sink-name.sh;
+    };
 
     packages = with pkgs; [
         alacritty
