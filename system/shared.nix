@@ -66,7 +66,7 @@
       "flatpak"
       "wheel"
     ];
-    shell = pkgs.zsh
+    shell = pkgs.zsh;
   };
 
   programs.steam = {
