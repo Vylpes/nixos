@@ -73,8 +73,24 @@
     enable = true;
     remotePlay.openFirewall = true;
   };
+
+  programs.zsh = {
+    enable = true;
+
+    shellAliases = {
+        lss = "ls -lah";
+
+        gss = "git status -s";
+        gaa = "git add -A";
+        gcm = "git commit -m";
+        gco = "git checkout";
+
+        yt-mp3 = "yt-mp3 -xi --audio-format mp3";
+        yt-mp3-meta = "yt-mp3 -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata";
+        yt-mp3-meta-cookies = "yt-mp3 -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata --cookies-from-browser firefox";
+    };
+  };
   
-  programs.zsh.enable = true;
   programs.neovim.defaultEditor = true;
 
   fonts = {

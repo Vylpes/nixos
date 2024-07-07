@@ -74,6 +74,7 @@ in {
         wget
         xclip
         yarn
+        yt-dlp
         zip
         zsh
         zsh-powerlevel10k
