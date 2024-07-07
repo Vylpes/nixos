@@ -22,6 +22,7 @@ in {
 
     file = {
         "/home/${username}/.scripts/audio/get-sink-name.sh".source = ./home/scripts/audio/get-sink-name.sh;
+        "/home/${username}/.cache/scripts/get-sink-name.txt".source = "";
     };
 
     packages = with pkgs; [
