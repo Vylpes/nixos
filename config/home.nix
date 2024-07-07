@@ -85,7 +85,6 @@ in {
         vimPlugins.vim-plug
         vscode
         wget
-        x11
         xclip
         yarn
         zip
