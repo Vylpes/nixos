@@ -97,7 +97,11 @@
 
   virtualisation.docker.enable = true;
 
-  xdg.portal.enable = true;
+    xdg.portal = {
+        enable = true;
+        config.common.default = "*";
+        extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    };
 
   system.stateVersion = "24.05";
 }
