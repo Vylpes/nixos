@@ -53,7 +53,7 @@ in {
         nextcloud-client
         nitrogen
         nodejs
-        npm
+        nodePackages.npm
         nvidia
         obsidian
         openssh
