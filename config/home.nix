@@ -38,7 +38,6 @@ in {
         hack-font
         hugo
         i3
-        i3lock
         i3lock-fancy
         keepassxc
         keepmenu
