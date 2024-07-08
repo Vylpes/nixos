@@ -55,6 +55,7 @@
 
       displayManager = {
         lightdm.enable = true;
+        lightdm.greeters.gtk.enable = true;
       };
     };
   };
