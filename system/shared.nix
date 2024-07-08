@@ -43,10 +43,19 @@
 
   i18n.defaultLocale = "en_GB.UTF-8";
 
+  security.rtkit.enable = true;
+
   services = {
     flatpak.enable = true;
     dbus.enable = true;
     picom.enable = true;
+    
+    pipewire = {
+        enable = true;
+        pulse.enable = true;
+        alsa.enable = true;
+        alsa.support32Bit = true;
+    };
 
     xserver = {
       enable = true;
@@ -87,9 +96,9 @@
         gcm = "git commit -m";
         gco = "git checkout";
 
-        yt-mp3 = "yt-mp3 -xi --audio-format mp3";
-        yt-mp3-meta = "yt-mp3 -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata";
-        yt-mp3-meta-cookies = "yt-mp3 -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata --cookies-from-browser firefox";
+        yt-mp3 = "yt-dlp -xi --audio-format mp3";
+        yt-mp3-meta = "yt-dlp -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata";
+        yt-mp3-meta-cookies = "yt-dlp -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata --cookies-from-browser firefox";
     };
   };
   
@@ -115,7 +124,6 @@
 
   environment.systemPackages = with pkgs; [
     docker
-    pulseaudio
   ];
 
   virtualisation.docker.enable = true;
@@ -126,7 +134,7 @@
       extraPortals = [pkgs.xdg-desktop-portal-gtk];
   };
 
-  hardware.pulseaudio.enable = true;
+  hardware.opengl.enable = true;
 
   system.stateVersion = "24.05";
 }

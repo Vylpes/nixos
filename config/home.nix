@@ -7,12 +7,6 @@ in {
 
   fonts.fontconfig.enable = true;
 
-  environment.variables = {
-    EDITOR = "nvim";
-    GDK_SCALE = 0.5;
-    GDK_DPI_SCALE = 0.5;
-  };
-
   xdg = {
     enable = true;
     userDirs = {
@@ -55,6 +49,7 @@ in {
         lightdm
         lua
         meslo-lgs-nf
+        mpv
         neovim
         networkmanager
         nextcloud-client
