@@ -49,6 +49,7 @@ in {
         lightdm
         lua
         meslo-lgs-nf
+        mpv
         neovim
         networkmanager
         nextcloud-client
@@ -64,6 +65,7 @@ in {
         pm2
         plexamp
         polybar
+        ranger
         rofi
         rofi-emoji
         steam
