@@ -23,6 +23,7 @@ set clipboard=unnamedplus
 filetype plugin on
 set cursorline
 set ttyfast
+set nofixeol
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -119,8 +120,8 @@ nnoremap <A-]> <cmd>lua require("harpoon.ui").nav_next()<CR>
 
 nnoremap <leader>ff :FZF<CR>
 
-nnoremap <silent> ga <cmd>lua vim.lsp.buf.code_action()<CR>
 nnoremap mm :nohl<CR>
+nnoremap ml :%s/\r//g<CR>
 
 nnoremap <leader>yb :!yarn build<CR>
 nnoremap <leader>yi :!yarn install<CR>
