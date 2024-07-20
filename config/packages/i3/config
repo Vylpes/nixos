@@ -38,6 +38,7 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id dunst
 exec_always --no-startup-id xborders --disable-version-warning --border-red 79 --border-green 190 --border-blue 217 --border-radius 15
+exec_always --no-startup-id nextcloud --background
 exec --no-startup-id polybar -r
 exec --no-startup-id "sh /home/vylpes/.screenlayout/default.sh"
 
