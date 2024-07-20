@@ -41,6 +41,7 @@ in {
         git
         grub2
         hack-font
+        htop
         hugo
         i3
         i3lock-fancy
@@ -68,6 +69,7 @@ in {
         ranger
         rofi
         rofi-emoji
+        slack
         steam
         tldr
         unzip
