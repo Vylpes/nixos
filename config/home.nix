@@ -67,6 +67,7 @@ in {
         pm2
         polybar
         polybar-pulseaudio-control
+        pulseaudio
         ranger
         rofi
         rofi-emoji
