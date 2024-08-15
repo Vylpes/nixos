@@ -63,9 +63,10 @@ in {
         os-prober
         pavucontrol
         picom
-        pm2
         plexamp
+        pm2
         polybar
+        polybar-pulseaudio-control
         ranger
         rofi
         rofi-emoji
