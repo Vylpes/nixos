@@ -16,7 +16,6 @@ in {
   };
 
   services.gnome-keyring.enable = true;
-  security.pam.services.lightdm.enableGnomeKeyring = true;
 
   home = {
     username = "${username}";

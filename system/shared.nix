@@ -43,7 +43,10 @@
 
   i18n.defaultLocale = "en_GB.UTF-8";
 
-  security.rtkit.enable = true;
+  security = {
+      rtkit.enable = true;
+      pam.services.lightdm.enableGnomeKeyring = true;
+  };
 
   services = {
     flatpak.enable = true;
