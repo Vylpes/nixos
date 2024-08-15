@@ -37,10 +37,6 @@
   networking = {
     networkmanager.enable = true;
     enableIPv6 = false;
-
-    firewall.allowedTCPPorts = [
-        22
-    ];
   };
 
   time.timeZone = "Europe/London";
@@ -58,6 +54,7 @@
     picom.enable = true;
     gnome.gnome-keyring.enable = true;
     rsyncd.enable = true;
+    openssh.enable = true;
     
     pipewire = {
         enable = true;
