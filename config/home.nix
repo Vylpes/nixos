@@ -23,7 +23,10 @@ in {
     '';
   };
 
-  services.gnome-keyring.enable = true;
+  services = {
+    gnome-keyring.enable = true;
+    rsyncd.enable = true;
+  };
 
   home = {
     username = "${username}";
