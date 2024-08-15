@@ -52,6 +52,8 @@
     flatpak.enable = true;
     dbus.enable = true;
     picom.enable = true;
+
+    gnome3.gnome-keyring.enable = true;
     
     pipewire = {
         enable = true;
