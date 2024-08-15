@@ -52,8 +52,6 @@
     flatpak.enable = true;
     dbus.enable = true;
     picom.enable = true;
-
-    gnome3.gnome-keyring.enable = true;
     
     pipewire = {
         enable = true;
@@ -64,8 +62,15 @@
 
     xserver = {
       enable = true;
-      windowManager.i3.enable = true;
       xkb.layout = "us";
+
+      windowManager.i3 = {
+        enable = true;
+        extraSessionCommands = ''
+            eval $(gnome-keyring-daemon --daemonize)
+            export SSH_AUTH_SOCK
+        '';
+      };
 
       displayManager = {
         lightdm.enable = true;

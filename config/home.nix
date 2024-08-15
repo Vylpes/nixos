@@ -41,6 +41,7 @@ in {
         font-awesome
         gimp
         git
+        gnome.gnome-keyring
         grub2
         hack-font
         htop
