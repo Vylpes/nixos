@@ -15,6 +15,14 @@ in {
     };
   };
 
+  xsession = {
+    enable = true;
+    initExtra = ''
+        eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+        export SSH_AUTH_SOCK
+    '';
+  };
+
   services.gnome-keyring.enable = true;
 
   home = {

@@ -52,6 +52,7 @@
     flatpak.enable = true;
     dbus.enable = true;
     picom.enable = true;
+    gnome.gnome-keyring.enable = true;
     
     pipewire = {
         enable = true;
@@ -63,8 +64,6 @@
     xserver = {
       enable = true;
       xkb.layout = "us";
-
-      desktopManager.gnome.enable = true;
 
       windowManager.i3 = {
         enable = true;
@@ -136,6 +135,7 @@
 
   environment.systemPackages = with pkgs; [
     docker
+    gnome.gnome-keyring
   ];
 
   virtualisation.docker.enable = true;
