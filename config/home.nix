@@ -15,6 +15,8 @@ in {
     };
   };
 
+  gtk.cursorTheme = pkgs.vimix-cursor-theme
+
   xsession = {
     enable = true;
     initExtra = ''
