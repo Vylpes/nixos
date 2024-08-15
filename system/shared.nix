@@ -37,6 +37,10 @@
   networking = {
     networkmanager.enable = true;
     enableIPv6 = false;
+
+    firewall.allowedTCPPorts = [
+        22
+    ];
   };
 
   time.timeZone = "Europe/London";
