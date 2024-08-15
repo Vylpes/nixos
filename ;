@@ -85,7 +85,6 @@
     extraGroups = [
       "docker"
       "flatpak"
-      "libvirtd"
       "wheel"
     ];
     shell = pkgs.zsh;
@@ -143,7 +142,6 @@
 
   virtualisation = {
     docker.enable = true;
-    libvirtd.enable = true;
   };
 
   xdg.portal = {
