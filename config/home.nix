@@ -25,7 +25,6 @@ in {
 
   services = {
     gnome-keyring.enable = true;
-    rsyncd.enable = true;
   };
 
   home = {

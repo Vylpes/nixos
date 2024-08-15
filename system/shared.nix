@@ -53,6 +53,7 @@
     dbus.enable = true;
     picom.enable = true;
     gnome.gnome-keyring.enable = true;
+    rsyncd.enable = true;
     
     pipewire = {
         enable = true;
