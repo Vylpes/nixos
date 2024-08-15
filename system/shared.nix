@@ -64,7 +64,7 @@
       enable = true;
       xkb.layout = "us";
 
-      desktopManager.gnome3.enable = true;
+      desktopManager.gnome.enable = true;
 
       windowManager.i3 = {
         enable = true;
