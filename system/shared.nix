@@ -138,10 +138,18 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    docker
-    gnome.gnome-keyring
-  ];
+
+  environment = {
+    systemPackages = with pkgs; [
+        docker
+        gnome.gnome-keyring
+        libuuid
+    ];
+
+    sessionVariables = {
+        LD_LIBRARY_PATH = "${pkgs.lib.makeLibraryPath [pkgs.libuuid]}";
+    };
+  };
 
   virtualisation = {
     docker.enable = true;
