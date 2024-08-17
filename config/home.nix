@@ -88,6 +88,7 @@ in {
         rofi-emoji
         slack
         steam
+        swtpm
         tldr
         unzip
         vim
