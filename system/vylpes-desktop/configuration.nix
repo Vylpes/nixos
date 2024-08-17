@@ -19,4 +19,9 @@
       videoDrivers = [ "nvidia" ];
     };
   };
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    forceFullCompositionPipeline = true;
+  };
 }
