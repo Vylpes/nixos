@@ -41,6 +41,8 @@ in {
 
     packages = with pkgs; [
         alacritty
+        arandr
+        autorandr
         cups
         curl
         discord
