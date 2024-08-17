@@ -218,12 +218,12 @@ bindsym $mod+r mode "resize"
 # Gaps
 gaps inner 5
 gaps outer -5
-gaps horizontal 5
-gaps vertical 5
-gaps top 5
-gaps right 5
-gaps bottom 5
-gaps left 5
+#gaps horizontal 5
+#gaps vertical 5
+#gaps top 5
+#gaps right 5
+#gaps bottom 5
+#gaps left 5
 
 default_border pixel 1
 client.focused #555555 #555555 #ffffff #2e9ef4     #63C5DA
