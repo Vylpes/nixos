@@ -216,8 +216,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 
 # Gaps
-# gaps inner 5
-# gaps outer 5
+gaps inner 5
+gaps outer -5
 gaps horizontal 5
 gaps vertical 5
 gaps top 5
