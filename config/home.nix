@@ -84,11 +84,11 @@ in {
         polybar-pulseaudio-control
         pulseaudio
         ranger
+        remmina
         rofi
         rofi-emoji
         slack
         steam
-        swtpm
         tldr
         unzip
         vim
