@@ -144,6 +144,11 @@
         docker
         gnome.gnome-keyring
         libuuid
+        spice
+        spice-gtk
+        spice-protocol
+        win-virtio
+        win-spice
     ];
 
     sessionVariables = {
@@ -153,7 +158,14 @@
 
   virtualisation = {
     docker.enable = true;
-    libvirtd.enable = true;
+    libvirtd = {
+        enable = true;
+        qemu = {
+            swtpm.enable = true;
+            ovmf.enable = true;
+            ovmf.packages = [ pkgs.OVMFFull.fd ];
+        };
+    };
   };
 
   xdg.portal = {
