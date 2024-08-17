@@ -93,7 +93,6 @@ in {
         unzip
         vim
         vimPlugins.vim-plug
-        virtualbox
         vscode
         wget
         xclip

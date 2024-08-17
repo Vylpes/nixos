@@ -88,6 +88,7 @@
       "docker"
       "flatpak"
       "libvirtd"
+      "vboxusers"
       "wheel"
     ];
     shell = pkgs.zsh;
