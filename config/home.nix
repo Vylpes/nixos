@@ -43,6 +43,7 @@ in {
         alacritty
         arandr
         autorandr
+        csharp-ls
         cups
         curl
         discord
