@@ -96,6 +96,7 @@ in {
         unzip
         vim
         vimPlugins.vim-plug
+        virtio-win
         vscode
         wget
         xclip
