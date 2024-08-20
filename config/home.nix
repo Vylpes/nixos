@@ -50,6 +50,7 @@ in {
         dotnet-sdk_8
         dotnetPackages.Nuget
         dunst
+        easytag
         firefox
         flameshot
         flatpak
