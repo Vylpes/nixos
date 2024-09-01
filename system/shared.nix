@@ -55,6 +55,7 @@
     gnome.gnome-keyring.enable = true;
     rsyncd.enable = true;
     openssh.enable = true;
+    printing.enable = true;
     
     pipewire = {
         enable = true;
