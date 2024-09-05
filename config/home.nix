@@ -63,6 +63,7 @@ in {
         htop
         hugo
         i3
+        i3-swallow
         i3lock-fancy
         keepassxc
         keepmenu
