@@ -94,6 +94,7 @@ in {
         rofi-emoji
         slack
         steam
+        sxiv
         tldr
         unzip
         vim
