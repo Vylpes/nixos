@@ -58,6 +58,7 @@ in {
         gimp
         git
         gnome.gnome-keyring
+        grip
         grub2
         hack-font
         htop
