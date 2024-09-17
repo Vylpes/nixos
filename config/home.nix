@@ -52,6 +52,7 @@ in {
         dunst
         easytag
         firefox
+        flac
         flameshot
         flatpak
         font-awesome
