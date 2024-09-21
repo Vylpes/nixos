@@ -85,6 +85,7 @@ in {
         os-prober
         pavucontrol
         picom
+        playerctl
         plexamp
         pm2
         polybar
