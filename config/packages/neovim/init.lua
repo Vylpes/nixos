@@ -52,16 +52,27 @@ vim.opt.fixeol = false
 
 local data_dir = vim.fn.has('nvim') == 1 and vim.fn.stdpath('data') .. '/site' or '~/.vim'
 
-if vim.fn.empty(vim.fn.glob(data_dir .. '/autoload/plug.vim')) == 1 then
-  vim.fn.system({
-    'curl', '-fLo', data_dir .. '/autoload/plug.vim', '--create-dirs',
-    'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  })
-  vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
+-- Ensure packer is installed
+local install_path = vim.fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
+  vim.fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+  vim.cmd [[packadd packer.nvim]]
 end
 
--- Initialize packer.nvim
-vim.cmd [[packadd packer.nvim]]
+-- Use a protected call so we don't error out on first use
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  return
+end
+
+-- Have packer use a popup window
+packer.init {
+  display = {
+    open_fn = function()
+      return require('packer.util').float { border = 'rounded' }
+    end,
+  },
+}
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
@@ -86,6 +97,7 @@ return require('packer').startup(function(use)
     use 'github/copilot.vim'
     use {'CopilotC-Nvim/CopilotChat.nvim', branch = 'canary'}
 end)
+vim.cmd [[packadd packer.nvim]]
 
 -- Copilot Chat
 local prompts = require('CopilotChat.prompts')
