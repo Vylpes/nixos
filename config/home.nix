@@ -96,6 +96,7 @@ in {
         rofi-emoji
         slack
         steam
+        sublime-music
         sxiv
         tldr
         unzip
