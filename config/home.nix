@@ -29,6 +29,13 @@ in {
     gnome-keyring.enable = true;
   };
 
+   programs.neovim = {
+     enable = true;
+     plugins = with pkgs.vimPlugins; [
+       packer-nvim
+     ];
+   };
+
   home = {
     username = "${username}";
     homeDirectory = "/home/${username}";
