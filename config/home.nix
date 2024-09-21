@@ -102,7 +102,6 @@ in {
         tldr
         unzip
         vim
-        vimPlugins.vim-packer
         vimPlugins.packer-nvim
         virtio-win
         vscode
