@@ -55,6 +55,7 @@
     gnome.gnome-keyring.enable = true;
     rsyncd.enable = true;
     openssh.enable = true;
+    printing.enable = true;
     
     pipewire = {
         enable = true;
@@ -116,6 +117,8 @@
         yt-mp3 = "yt-dlp -xi --audio-format mp3";
         yt-mp3-meta = "yt-dlp -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata";
         yt-mp3-meta-cookies = "yt-dlp -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata --cookies-from-browser firefox";
+
+        s = "swallow";
     };
   };
   

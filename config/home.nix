@@ -52,17 +52,20 @@ in {
         dunst
         easytag
         firefox
+        flac
         flameshot
         flatpak
         font-awesome
         gimp
         git
         gnome.gnome-keyring
+        grip
         grub2
         hack-font
         htop
         hugo
         i3
+        i3-swallow
         i3lock-fancy
         keepassxc
         keepmenu
@@ -82,6 +85,7 @@ in {
         os-prober
         pavucontrol
         picom
+        playerctl
         plexamp
         pm2
         polybar
@@ -93,6 +97,8 @@ in {
         rofi-emoji
         slack
         steam
+        sublime-music
+        sxiv
         tldr
         unzip
         vim
