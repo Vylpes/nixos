@@ -46,6 +46,7 @@ in {
         csharp-ls
         cups
         curl
+        dbeaver-bin
         discord
         dotnet-sdk_8
         dotnetPackages.Nuget
