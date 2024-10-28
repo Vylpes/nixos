@@ -8,5 +8,6 @@
     ./neovim
     ./picom
     ./polybar
+    ./yt-dlp
   ];
 }
