@@ -53,6 +53,7 @@ in {
         dotnetPackages.Nuget
         dunst
         easytag
+        ffmpeg
         firefox
         flac
         flameshot
