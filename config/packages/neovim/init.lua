@@ -1,5 +1,3 @@
-lua require("plugins")
-
 -- Leader key
 vim.g.mapleader = " "
 
@@ -205,3 +203,42 @@ vim.api.nvim_set_keymap('v', '<leader>pf', ':CopilotChatFix<CR>', { noremap = tr
 vim.api.nvim_set_keymap('v', '<leader>po', ':CopilotChatOptimize<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>pd', ':CopilotChatDocs<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>pt', ':CopilotChatTests<CR>', { noremap = true, silent = true })
+
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
+
+local packer_bootstrap = ensure_packer()
+
+vim.cmd [[packadd packer.nvim]]
+
+return require('packer').startup(function(use)
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
+
+    -- Plugins
+    use 'dracula/vim'
+    use 'ryanoasis/vim-devicons'
+    -- use 'SirVer/ultisnips'
+    use 'honza/vim-snippets'
+    use 'scrooloose/nerdtree'
+    use 'preservim/nerdcommenter'
+    use 'mhinz/vim-startify'
+    use {'neoclide/coc.nvim', branch = 'release'}
+    use 'nvim-lua/plenary.nvim'
+    use 'ThePrimeagen/harpoon'
+    use {'junegunn/fzf', run = function() vim.fn['fzf#install']() end}
+    use 'junegunn/fzf.vim'
+    use 'neovim/nvim-lspconfig'
+    use 'jose-elias-alvarez/null-ls.nvim'
+    use 'MunifTanjim/prettier.nvim'
+    use 'github/copilot.vim'
+    use {'CopilotC-Nvim/CopilotChat.nvim', branch = 'canary'}
+end)
