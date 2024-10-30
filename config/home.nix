@@ -43,6 +43,7 @@ in {
         alacritty
         arandr
         autorandr
+        brickstore
         csharp-ls
         cups
         curl
