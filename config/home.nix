@@ -53,11 +53,14 @@ in {
         csharp-ls
         cups
         curl
+        dbeaver-bin
         discord
+        dolphin-emu
         dotnet-sdk_8
         dotnetPackages.Nuget
         dunst
         easytag
+        ffmpeg
         firefox
         flac
         flameshot

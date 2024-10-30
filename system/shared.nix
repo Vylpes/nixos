@@ -114,10 +114,6 @@
         gcm = "git commit -m";
         gco = "git checkout";
 
-        yt-mp3 = "yt-dlp -xi --audio-format mp3";
-        yt-mp3-meta = "yt-dlp -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata";
-        yt-mp3-meta-cookies = "yt-dlp -xi --audio-format mp3 --parse-metadata \"playlist_index:%(track_number)s\" --add-metadata --cookies-from-browser firefox";
-
         s = "swallow";
     };
   };

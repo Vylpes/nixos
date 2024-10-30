@@ -1,0 +1,22 @@
+# Output format: album/tracks.format
+-o "%(album,playlist_title)U/%(track_number,playlist_index)s - %(title)U.%(ext)s"
+--windows-filenames
+# --restrict-filenames
+
+# Extract audio
+-f bestaudio
+--extract-audio
+--audio-format mp3
+
+# Thumbnail squared
+--convert-thumbnails png
+--ppa "ThumbnailsConvertor+ffmpeg_o:-c:v png -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\""
+--embed-thumbnail
+
+# Metadata, with playlist number as track number if the latter is missing
+--embed-metadata
+--parse-metadata "playlist_index:%(track_number)s"
+
+# Misc
+--no-overwrites
+--concurrent-fragments 4
