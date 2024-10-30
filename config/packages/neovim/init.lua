@@ -50,10 +50,6 @@ vim.opt.ttyfast = true
 -- Do not add a newline at the end of the file
 vim.opt.fixeol = false
 
-if vim.fn.has("termguicolors") == 1 then
-    vim.opt.termguicolors = true
-end
-
 -- Enable syntax highlighting
 vim.cmd("syntax enable")
 
@@ -242,3 +238,8 @@ require("CopilotChat").setup {
       layout = 'float',
   },
 }
+
+if vim.fn.has("termguicolors") == 1 then
+    vim.opt.termguicolors = true
+end
+
