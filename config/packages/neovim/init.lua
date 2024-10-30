@@ -50,27 +50,6 @@ vim.opt.ttyfast = true
 -- Do not add a newline at the end of the file
 vim.opt.fixeol = false
 
--- Copilot Chat
-local prompts = require('CopilotChat.prompts')
-local select = require('CopilotChat.select')
-
-require("CopilotChat").setup {
-  debug = false,
-
-  question_header = '## User ',
-  answer_header = '## Copilot ',
-  error_header = '## Error ',
-  separator = '---',
-
-  selection = function(source)
-    return select.visual(source) or select.line(source)
-  end,
-
-  window = {
-      layout = 'float',
-  },
-}
-
 if vim.fn.has("termguicolors") == 1 then
     vim.opt.termguicolors = true
 end
@@ -242,3 +221,24 @@ return require('packer').startup(function(use)
     use 'github/copilot.vim'
     use {'CopilotC-Nvim/CopilotChat.nvim', branch = 'canary'}
 end)
+
+-- Copilot Chat
+local prompts = require('CopilotChat.prompts')
+local select = require('CopilotChat.select')
+
+require("CopilotChat").setup {
+  debug = false,
+
+  question_header = '## User ',
+  answer_header = '## Copilot ',
+  error_header = '## Error ',
+  separator = '---',
+
+  selection = function(source)
+    return select.visual(source) or select.line(source)
+  end,
+
+  window = {
+      layout = 'float',
+  },
+}
