@@ -50,29 +50,7 @@ vim.opt.ttyfast = true
 -- Do not add a newline at the end of the file
 vim.opt.fixeol = false
 
-local data_dir = vim.fn.has('nvim') == 1 and vim.fn.stdpath('data') .. '/site' or '~/.vim'
-
--- Ensure packer is installed
-local install_path = vim.fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-  vim.fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-  vim.cmd [[packadd packer.nvim]]
-end
-
--- Use a protected call so we don't error out on first use
-local status_ok, packer = pcall(require, "packer")
-if not status_ok then
-  return
-end
-
--- Have packer use a popup window
-packer.init {
-  display = {
-    open_fn = function()
-      return require('packer.util').float { border = 'rounded' }
-    end,
-  },
-}
+vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
@@ -97,7 +75,6 @@ return require('packer').startup(function(use)
     use 'github/copilot.vim'
     use {'CopilotC-Nvim/CopilotChat.nvim', branch = 'canary'}
 end)
-vim.cmd [[packadd packer.nvim]]
 
 -- Copilot Chat
 local prompts = require('CopilotChat.prompts')
