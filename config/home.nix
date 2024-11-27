@@ -111,7 +111,6 @@ in {
         virtio-win
         vscode
         wget
-        x11docker
         xclip
         yarn
         yt-dlp
