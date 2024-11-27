@@ -49,6 +49,7 @@ in {
         curl
         dbeaver-bin
         discord
+        distrobox
         dolphin-emu
         dotnet-sdk_8
         dotnetPackages.Nuget
