@@ -7,12 +7,12 @@ then
     i3lock-fancy -g -t "System Locked" -f Hack-Regular
     systemctl sleep
 elif [ "$option" = "Logout" ];
+then
     i3-msg exit
-then
 elif [ "$option" = "Shutdown" ];
+then
     poweroff
-then
 elif [ "$option" = "Restart" ];
-    reboot
 then
+    reboot
 fi
