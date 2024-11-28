@@ -5,7 +5,7 @@ option=$(printf "Sleep\nLogout\nShutdown\nRestart" | rofi -dmenu -theme Arc-Dark
 if [ "$option" = "Sleep" ];
 then
     i3lock-fancy -g -t "System Locked" -f Hack-Regular
-    systemctl sleep
+    systemctl suspend
 elif [ "$option" = "Logout" ];
 then
     i3-msg exit
