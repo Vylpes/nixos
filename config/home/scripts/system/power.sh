@@ -1,18 +1,18 @@
 #!/bin/bash
 
-option=$(printf "Sleep\nLogout\nShutdown\nRestart" | rofi -dmenu -theme Arc-Dark -font 'hack 18')
+option=$(printf "sleep\nlogout\nshutdown\nrestart" | rofi -dmenu -theme Arc-Dark -font 'hack 18')
 
-if [ "$option" = "Sleep" ];
+if [ "$option" = "sleep" ];
 then
     i3lock-fancy -g -t "System Locked" -f Hack-Regular
     systemctl suspend
-elif [ "$option" = "Logout" ];
+elif [ "$option" = "logout" ];
 then
     i3-msg exit
-elif [ "$option" = "Shutdown" ];
+elif [ "$option" = "shutdown" ];
 then
     poweroff
-elif [ "$option" = "Restart" ];
+elif [ "$option" = "restart" ];
 then
     reboot
 fi
