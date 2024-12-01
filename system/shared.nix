@@ -115,7 +115,7 @@
         gco = "git checkout";
 
         s = "swallow";
-        nrb = "sudo nixos-rebuild switch --flake /home/vylpes/flake#${HOST}";
+        nrb = "sudo nixos-rebuild switch --flake /home/vylpes/flake#\${HOST}";
     };
   };
   
