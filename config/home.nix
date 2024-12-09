@@ -83,6 +83,7 @@ in {
         neovim
         networkmanager
         nextcloud-client
+        nfs-utils
         nitrogen
         nodejs
         nodePackages.npm
