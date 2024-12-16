@@ -46,6 +46,7 @@ in {
         audacity
         autorandr
         brickstore
+        brightnessctl
         csharp-ls
         cups
         curl
