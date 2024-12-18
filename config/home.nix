@@ -43,6 +43,7 @@ in {
     packages = with pkgs; [
         alacritty
         arandr
+        asunder
         audacity
         autorandr
         brickstore
