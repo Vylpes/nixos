@@ -78,6 +78,7 @@ in {
         i3lock-fancy
         keepassxc
         keepmenu
+        lame
         lightdm
         lua
         meslo-lgs-nf
