@@ -77,6 +77,7 @@ in {
         i3
         i3-swallow
         i3lock-fancy
+        kdePackages.kleopatra
         keepassxc
         keepmenu
         lame
