@@ -98,6 +98,7 @@ in {
         os-prober
         pavucontrol
         picom
+        pinentry-rofi
         playerctl
         plexamp
         pm2
