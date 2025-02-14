@@ -121,8 +121,6 @@
   
   programs.neovim.defaultEditor = true;
 
-  programs.gnupg.agent.pinentryPackage = pkgs.pinentry-rofi;
-
   fonts = {
     packages = with pkgs; [
       noto-fonts
