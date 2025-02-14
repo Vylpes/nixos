@@ -68,6 +68,7 @@ in {
         gimp
         git
         gnome.gnome-keyring
+        gnupg
         grip
         grub2
         hack-font
