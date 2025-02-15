@@ -81,6 +81,7 @@ in {
         keepassxc
         keepmenu
         lame
+        libreoffice-fresh
         lightdm
         lua
         meslo-lgs-nf
