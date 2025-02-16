@@ -48,6 +48,7 @@ in {
         autorandr
         brickstore
         brightnessctl
+        corefonts
         csharp-ls
         cups
         curl
@@ -119,6 +120,7 @@ in {
         vim
         vimPlugins.vim-plug
         virtio-win
+        vistafonts
         vscode
         wget
         xclip
