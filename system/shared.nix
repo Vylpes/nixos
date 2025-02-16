@@ -167,7 +167,6 @@
             ovmf.packages = [ pkgs.OVMFFull.fd ];
         };
     };
-    virtualbox.host.enable = true;
   };
 
   xdg.portal = {
