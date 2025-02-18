@@ -106,6 +106,7 @@ in {
         pm2
         polybar
         polybar-pulseaudio-control
+        prismlauncher
         pulseaudio
         ranger
         remmina
